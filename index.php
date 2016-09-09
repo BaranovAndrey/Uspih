@@ -14,7 +14,7 @@
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://use.fonticons.com/ffe176a3.js"></script>
-		<script src="assets/vendor/Smooth-Scrolling/jQuery.scrollSpeed.js"></script>
+		<!-- <script src="assets/vendor/Smooth-Scrolling/jQuery.scrollSpeed.js"></script> -->
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 	</head>
 	<body>
@@ -283,21 +283,21 @@
     	}, 20000);
 
 
-    	$(function() {  
+  //   	$(function() {  
 
-		    jQuery.scrollSpeed(100, 800);    //Smooth page scrolling.
-		});
+		//     jQuery.scrollSpeed(100, 800);    //Smooth page scrolling.
+		// });
 
 
-		jQuery(document).ready(function(){
+		// jQuery(document).ready(function(){
 
-    		jQuery('#services-link').click(function() {
+  //   		jQuery('#services-link').click(function() {
 
-        		jQuery.scrollTo('#services');
+  //       		jQuery.scrollTo('#services');
 
-    		});
+  //   		});
 
-		});
+		// });
 
        
 		
