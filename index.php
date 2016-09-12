@@ -14,7 +14,7 @@
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://use.fonticons.com/ffe176a3.js"></script>
-		<!-- <script src="assets/vendor/Smooth-Scrolling/jQuery.scrollSpeed.js"></script> -->
+		<script src="assets/vendor/Smooth-Scrolling/jQuery.scrollSpeed.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 	</head>
 	<body>
@@ -124,9 +124,9 @@
 							<li><a href="#">І ще одне місто)</a></li>
 						</ul>
 			        </li>
-			        <li class="active" ><a id="services-link" href="#">Послуги Агентства</a></li>
-			        <li class="nav-link"><a href="#">Галерея</a></li>
-			        <li class="nav-link"><a href="#">Контакти</a></li>
+			        <li class="nav-link"><a id="services-link" href="#">Послуги Агентства</a></li>
+			        <li class="nav-link"><a id="galery-link" href="#">Галерея</a></li>
+			        <li class="nav-link"><a id="contacts-link" href="#">Контакти</a></li>
 					</ul>
 			      
 			    
@@ -184,7 +184,7 @@
 				</div>	
 			</div>		
 		</div>
-		<div class="separator">
+		<div class="separator" id="separator-services">
 			<p>Послуги агентства</p>
 		</div>
 
@@ -247,7 +247,7 @@
 	</div>
    
     <script>
-    	$('.navbar-primary').find('li').removeClass('active');
+    	$('.logo-img').removeClass('hidden');
     	
     	$('.navbar-brand').addClass('hidden');
 
@@ -283,22 +283,29 @@
     	}, 20000);
 
 
-  //   	$(function() {  
+    	$(function() {  
 
-		//     jQuery.scrollSpeed(100, 800);    //Smooth page scrolling.
-		// });
+		    jQuery.scrollSpeed(80, 800);    //Smooth page scrolling.
+		});
 
 
-		// jQuery(document).ready(function(){
+		$("#services-link").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#separator-services").offset().top
+		    }, 1500);
+		});
 
-  //   		jQuery('#services-link').click(function() {
+		$("#galery-link").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#separator-galery").offset().top
+		    }, 1500);
+		});
 
-  //       		jQuery.scrollTo('#services');
-
-  //   		});
-
-		// });
-
+		$("#contacts-link").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#separator-contacts").offset().top
+		    }, 1500);
+		});
        
 		
     </script>
