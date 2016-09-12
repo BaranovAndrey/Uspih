@@ -283,6 +283,19 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
     border: 1px solid #FAAA3B;
 }
 
+/*.anchor img {
+	width: 50px;
+	
+}
+
+.anchorWrapper {
+	position: fixed;
+	right: 40px;
+	left: auto;
+	top: auto;
+	bottom: 400px;
+}*/
+
 .icon a {
 	font-size: 35px;
 	padding-left: 9px;
@@ -337,9 +350,13 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
 	display: inline-block;
 }
 
-.services {
+.content{
 	min-height: 450px;
-	background-color: #530503;
+	max-width: 75%;
+	background-color: transparent;
+	margin: 0 auto 10px auto;
+	height: 100vh;
+	
 }
 
 

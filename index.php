@@ -187,7 +187,21 @@
 		<div class="separator" id="separator-services">
 			<p>Послуги агентства</p>
 		</div>
-
+		<div class="services content" id="services">
+			
+		</div>
+		<div class="separator" id="separator-galery">
+			<p>Галерея</p>
+		</div>
+		<div class="gallery content" id="gallery">
+			
+		</div>
+		<div class="separator" id="separator-contacts">
+			<p>Контакти</p>
+		</div>
+		<div class="contacts content" id="contacts">
+			
+		</div>
 			<div class="fixedPanel">
 				<div class="socials">
 					<div class="icon fb">
@@ -206,18 +220,13 @@
 				<a href="#"><div class="contactButton animated shake">
 					
 				</div></a>
+
 			</div>
 		</div>
+		<!-- <div class="anchorWrapper">
+		<a href="#"><div class="anchor" id="anchor"><img src="assets/img/scroll_to_top.png"></div></a>
+		</div> -->
 		
-		<div class="services" id="services">
-			
-		</div>
-		<div class="gallery" id="gallery">
-			
-		</div>
-		<div class="comtacts" id="contacts">
-			
-		</div>
 		<div class="footer">
 			<div class="logo-footer">
 				<a href="#"><p>Успіх</p></a>
@@ -244,6 +253,7 @@
 			</div>	
 		</div>
 
+	</div>
 	</div>
    
     <script>
@@ -305,6 +315,11 @@
 		    $('html, body').animate({
 		        scrollTop: $("#separator-contacts").offset().top
 		    }, 1500);
+		});
+
+		$("#navbar-brand").click(function() {
+		    $('html, body').animate({
+		        scrollTop: 0 },1500);
 		});
        
 		
