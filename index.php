@@ -229,7 +229,7 @@
 		
 		<div class="footer">
 			<div class="logo-footer">
-				<a href="#"><p>Успіх</p></a>
+				<a href="#"><img src="assets/img/logo.png"></a>
 			</div>
 			<div class="socials-footer">
 				<div class="icon fb">
@@ -319,7 +319,7 @@
 
 		$("#navbar-brand").click(function() {
 		    $('html, body').animate({
-		        scrollTop: 0 },1500);
+		        scrollTop: 0 }, 1500);
 		});
        
 		
