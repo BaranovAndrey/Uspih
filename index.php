@@ -6,7 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<title>Нерухомість Червоноград</title>
-
+		<link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 		<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
@@ -124,9 +124,9 @@
 							<li><a href="#">І ще одне місто)</a></li>
 						</ul>
 			        </li>
-			        <li class="nav-link"><a id="services-link" href="#">Послуги Агентства</a></li>
-			        <li class="nav-link"><a id="galery-link" href="#">Галерея</a></li>
-			        <li class="nav-link"><a id="contacts-link" href="#">Контакти</a></li>
+			        <li><a class="nav-link" id="services-link" href="#">Послуги Агентства</a></li>
+			        <li><a class="nav-link" id="galery-link" href="#">Галерея</a></li>
+			        <li><a class="nav-link" id="contacts-link" href="#">Контакти</a></li>
 					</ul>
 			      
 			    
@@ -200,7 +200,41 @@
 			<p>Контакти</p>
 		</div>
 		<div class="contacts content" id="contacts">
-			
+			<div class="map">
+				
+			</div>
+			<div class="address">
+				
+			</div>
+			<div class="contact-form" id="contact-form">
+				<section class="body">
+    
+				    <form action="form.php" method="post" enctype="multipart/form-data">
+				        
+				        <h1 class="title">Розмістити оголошення</h1>
+				        
+					    <label></label>
+					    <input name="name" required="required" placeholder="Ваше Ім'я">
+
+					     <label></label>
+					    <input name="phone" required="required" placeholder="Номер телефону">
+					           
+					   	<label></label>
+					    <input name="email" type="email" placeholder="Електоронна адреса">
+					            
+					    
+					    <label></label>
+					    <textarea name="message" cols="20" rows="5" required="required" placeholder="Оголошення"></textarea>
+					    
+					    		    
+					    <input class="btn-lg" id="cancel" name="cancel" value="Відмінити" />
+					            
+					    <input class="btn-lg" id="submit" name="submit" type="submit" value="Відправити">
+				        
+				    </form>
+
+			    </section>
+			</div>
 		</div>
 			<div class="fixedPanel">
 				<div class="socials">
@@ -322,7 +356,17 @@
 		        scrollTop: 0 }, 1500);
 		});
        
-		
+		// 	$('.nav-link').click(function(e){
+		// 	e.preventDefault();
+		// 	var scrollElem = $(this).attr('id');
+			
+
+		// var scrollPosition = $(scrollElem).offset().top;
+		// console.log(scrollPosition);
+		// $('html, body').animate({
+		// 	scrollTop: $('separator-' + scrollPosition).offset().top
+		// }, 1500);
+		// });
     </script>
 	</body>
 </html>

@@ -209,9 +209,8 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
 }
 
 .centralPanel {
-	max-width: 820px;
+	max-width: 65%;
 	margin: 10px auto 0 auto;
-	border: 2px double #530503;
 	-webkit-border-radius: 6px; 
     -moz-border-radius: 6px;
     border-radius: 6px;
@@ -223,7 +222,7 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
 }
 .jumbotron {
 	max-height: 200px;
-	max-width: 800px;
+	max-width: inherit;
 	padding: 10px;
 	-webkit-border-radius: 6px; 
     -moz-border-radius: 6px;
@@ -235,14 +234,19 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
 .btn-lg {
 	font-size: 14px;
 	background-color: #FAAA3B;
-	border-color: #FAAA3B;
+	border: none;
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	cursor: pointer;
+	color: #530503;
 }
 
 .btn-lg:hover {
 	background-color: #C37304;
-	border-color: #C37304;
+	border: none;
+	color: #530503;
 }
-
 
 .hot {
 	margin-bottom: 15px;
@@ -281,19 +285,6 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
     border-radius: 6px;
     border: 1px solid #FAAA3B;
 }
-
-/*.anchor img {
-	width: 50px;
-	
-}
-
-.anchorWrapper {
-	position: fixed;
-	right: 40px;
-	left: auto;
-	top: auto;
-	bottom: 400px;
-}*/
 
 .icon a {
 	font-size: 35px;
@@ -348,14 +339,98 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
 	display: inline-block;
 }
 
-.content{
-	min-height: 450px;
-	max-width: 75%;
-	background-color: transparent;
-	margin: 0 auto 10px auto;
+.content {
 	height: 100vh;
-	
+	margin: 80px auto 10px auto;
+	max-width: 65%;
+	background-color: #530503;
+	-webkit-border-radius: 6px; 
+    -moz-border-radius: 6px;
+    border-radius: 6px;
 }
 
+.contact-form {
+	padding-top: 15px;
+	display:block;
+    margin:0 auto;
+    width:576px;
+    font-size: 16px;
+    color: #999;
+}
+
+h1 {
+	text-align: center;
+	color: #FAAA3B;
+}
+
+
+label {
+    display:block;
+    margin-top:20px;
+    letter-spacing:2px;
+    color: #530503;
+}
+
+
+form {
+    margin:0 auto;
+    width:459px;
+}
+
+
+input, textarea, file {
+	width: 439px;
+	height: 27px;
+	background-color: #FAAA3B;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	padding: 10px;
+	margin-top: 3px;
+	font-size: 0.9em;
+	color: #530503;
+	border: none;
+}
+
+input:focus, textarea:focus {
+	border:1px solid #C37304;
+}
+
+	
+textarea {
+	height: 180px;
+	background-color: #FAAA3B;
+}
+
+
+/*#submit {
+	width:127px;
+	height:48px;
+	text-align: center;
+	border:none;
+	margin-top:20px;
+	cursor:pointer;
+}
+	
+#submit:hover {
+	color:#fff;
+	background-color: #216182;
+	opacity:0.9;
+}
+	
+#cancel {
+	width:127px;
+	height:48px;
+	text-align: center;
+	border:none;
+	margin-top:20px;
+	cursor:pointer;
+}
+
+#cancel:hover {
+	color:#fff;
+	background-color: #000;
+	opacity:0.9;
+}*/
 
 
