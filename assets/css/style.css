@@ -33,6 +33,11 @@ body {
 	margin-bottom: 4px;
 }
 
+/*.contacts-logo-wrapper {
+	width: 65%;
+	margin: 0 auto;
+}*/
+
 .contacts-logo {
 	font-size: 20px;
 	font-weight: bold;
@@ -55,9 +60,9 @@ body {
 }
 
 .fixed .inf {
-	margin-left: 70px;
-	margin-right: 70px;
-	font-size: 25px;
+	margin-left: 35px;
+	margin-right: 35px;
+	font-size: 20px;
 }
 
 .inf {
@@ -66,6 +71,10 @@ body {
 	margin-right: 15px;
 }
 
+.container-fluid {
+	padding-right: 0;
+	padding-left: 20px;
+}
 .navbar-default .navbar-nav>li>a {
 	
 	text-transform: uppercase;
@@ -122,7 +131,11 @@ body {
 }
 
 .navbar-brand {
-
+	position: absolute;
+	left: 15px;
+	right: auto;
+	top: auto;
+	bottom: auto;
 }
 
 .navbar-default .navbar-nav>li>a:hover {
@@ -221,7 +234,6 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
 	padding-bottom: -10px;
 }
 .jumbotron {
-	max-height: 200px;
 	max-width: inherit;
 	padding: 10px;
 	-webkit-border-radius: 6px; 
@@ -284,6 +296,17 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
     -moz-border-radius: 6px;
     border-radius: 6px;
     border: 1px solid #FAAA3B;
+}
+
+.contactButton p {
+	transform: rotate(90deg);
+    transform-origin: left top 0;
+    color: #FAAA3B;
+    line-height: 1;
+}
+
+.contactButton a:hover {
+	text-decoration: none;
 }
 
 .icon a {
@@ -350,7 +373,7 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
 }
 
 .contact-form {
-	padding-top: 15px;
+	padding-top: 5px;
 	display:block;
     margin:0 auto;
     width:576px;
@@ -358,9 +381,14 @@ ul.nav li.dropdown-primary:hover ul.dropdown-menu-primary {
     color: #999;
 }
 
+::-webkit-input-placeholder {color:#530503;}
+::-moz-placeholder          {color:#530503;}
+:-moz-placeholder           {color:#530503;}
+:-ms-input-placeholder      {color:#530503;}
+
 h1 {
 	text-align: center;
-	color: #FAAA3B;
+	color: #FC9B44;
 }
 
 
@@ -402,35 +430,11 @@ textarea {
 	background-color: #FAAA3B;
 }
 
-
-/*#submit {
-	width:127px;
-	height:48px;
+.address {
 	text-align: center;
-	border:none;
-	margin-top:20px;
-	cursor:pointer;
-}
-	
-#submit:hover {
-	color:#fff;
-	background-color: #216182;
-	opacity:0.9;
-}
-	
-#cancel {
-	width:127px;
-	height:48px;
-	text-align: center;
-	border:none;
-	margin-top:20px;
-	cursor:pointer;
+	padding-top: 5px;
 }
 
-#cancel:hover {
-	color:#fff;
-	background-color: #000;
-	opacity:0.9;
-}*/
+
 
 

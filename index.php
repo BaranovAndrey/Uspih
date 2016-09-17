@@ -14,7 +14,6 @@
 		<script src="https://code.jquery.com/jquery-3.1.0.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 		<script src="https://use.fonticons.com/ffe176a3.js"></script>
-		<script src="assets/vendor/Smooth-Scrolling/jQuery.scrollSpeed.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
 	</head>
 	<body>
@@ -32,6 +31,7 @@
 	    			<p>(067) 66-87-848</p>
 	    		</div>
 	    	</div>
+	    	
 	    </div> 
 		
 		<div class="navMenu">
@@ -184,19 +184,19 @@
 				</div>	
 			</div>		
 		</div>
-		<div class="separator" id="separator-services">
+		<div class="separator services-link" id="separator-services">
 			<p>Послуги агентства</p>
 		</div>
 		<div class="services content" id="services">
 			
 		</div>
-		<div class="separator" id="separator-galery">
+		<div class="separator galery-link" id="separator-galery">
 			<p>Галерея</p>
 		</div>
 		<div class="gallery content" id="gallery">
 			
 		</div>
-		<div class="separator" id="separator-contacts">
+		<div class="separator contacts-link" id="separator-contacts">
 			<p>Контакти</p>
 		</div>
 		<div class="contacts content" id="contacts">
@@ -204,7 +204,10 @@
 				
 			</div>
 			<div class="address">
-				
+				<h2>Наша адреса:</h2>
+				<p>м. Червоноград</p>
+				<p>пр. Шевченка 18а</p>
+				<p>магазин "Атлант" 3-й поверх</p>
 			</div>
 			<div class="contact-form" id="contact-form">
 				<section class="body">
@@ -214,20 +217,18 @@
 				        <h1 class="title">Розмістити оголошення</h1>
 				        
 					    <label></label>
-					    <input name="name" required="required" placeholder="Ваше Ім'я">
+					    <input name="name" required="required" placeholder="Ваше Ім'я*">
 
 					     <label></label>
-					    <input name="phone" required="required" placeholder="Номер телефону">
+					    <input name="phone" required="required" placeholder="Номер телефону*">
 					           
 					   	<label></label>
-					    <input name="email" type="email" placeholder="Електоронна адреса">
+					    <input name="email" type="email" placeholder="Електронна адреса">
 					            
 					    
 					    <label></label>
-					    <textarea name="message" cols="20" rows="5" required="required" placeholder="Оголошення"></textarea>
-					    
-					    		    
-					    <input class="btn-lg" id="cancel" name="cancel" value="Відмінити" />
+					    <textarea name="message" cols="20" rows="5" required="required" placeholder="Оголошення*"></textarea>
+				
 					            
 					    <input class="btn-lg" id="submit" name="submit" type="submit" value="Відправити">
 				        
@@ -251,9 +252,7 @@
 						<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					</div>
 				</div>
-				<a href="#"><div class="contactButton animated shake">
-					
-				</div></a>
+				<a href="#"><div id="animated-button" class="contactButton animated shake"><img src="assets/img/vertical_button.png"></div></a>
 
 			</div>
 		</div>
@@ -291,6 +290,9 @@
 	</div>
    
     <script>
+    	
+
+
     	$('.logo-img').removeClass('hidden');
     	
     	$('.navbar-brand').addClass('hidden');
@@ -326,13 +328,7 @@
     		}, 0);
     	}, 20000);
 
-
-    	$(function() {  
-
-		    jQuery.scrollSpeed(80, 800);    //Smooth page scrolling.
-		});
-
-
+  
 		$("#services-link").click(function() {
 		    $('html, body').animate({
 		        scrollTop: $("#separator-services").offset().top
@@ -356,10 +352,26 @@
 		        scrollTop: 0 }, 1500);
 		});
        
-		// 	$('.nav-link').click(function(e){
-		// 	e.preventDefault();
-		// 	var scrollElem = $(this).attr('id');
-			
+		$("#animated-button").click(function() {
+		    $('html, body').animate({
+		        scrollTop: $("#separator-contacts").offset().top
+		    }, 1500);
+		});
+
+
+
+			// $('.nav-link').click(function(e){
+			// 	// e.preventDefault();
+			// 	// var scrollElem = $(this).attr('id');
+			// 	// scrollElem = $(this).removeAttr('id');
+			// 	var scrollElem = $(this).attr('class');
+			//  	function(elem){
+			//  		scrollElem = scrollElem.offset();
+			//  		return scrollElem;
+			//  	}
+			//  	$('html, body').animate({
+		 //        scrollTop: $(elem).offset().top
+		 //    }, 1500);
 
 		// var scrollPosition = $(scrollElem).offset().top;
 		// console.log(scrollPosition);
